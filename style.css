@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,18 +15,18 @@ body{
     position: relative;
     border: 5px solid #666;
     margin-bottom: 20px;
-    box-shadow: 0 0 20px rgb(0,0,0,0.5);
-
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-#score-board{
-    font-size: large;
+
+#score-board {
+    font-size: x-large;
     font-weight: bold;
     color: black;
-    margin: 10px,0;
+    margin: 10px 0;
 }
 
-.Start-Button {
-    background-color: orange;
+.start-button {
+    background-color: orangered;
     color: white;
     padding: 15px 30px;
     text-align: center;
@@ -36,4 +36,27 @@ body{
     cursor: pointer;
     border: none;
     border-radius: 6px;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+    position: absolute;
+    border-radius: 5px;
 }
